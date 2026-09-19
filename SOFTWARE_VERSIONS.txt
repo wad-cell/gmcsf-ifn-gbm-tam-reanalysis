@@ -1,0 +1,11 @@
+# SOFTWARE_VERSIONS.txt (v3, C4.4G)
+Python 3.11.8                       (exact; analysis_environment_verified.txt + clean-room log)
+PyDESeq2 0.5.4                      (exact, frozen)
+matplotlib 3.11.1                   (exact; recovered from PNG/PDF metadata of the original-run figures)
+numpy 2.4.6 / pandas 2.3.3 / scipy 1.17.1 / statsmodels 0.14.6 / anndata 0.12.19
+                                    (clean-room environment log, 2026-08-26)
+mygene / gseapy / seaborn           UNKNOWN_ORIGINAL_VERSION (no original evidence; not guessed)
+R: Not applicable (no R script is part of the analysis chain in this environment)
+
+Full per-package evidence tiers: environment.lock.txt
+Package -> script import matrix: the sibling DEPENDENCY_AUDIT_v3.md (outside the zip)

@@ -1,0 +1,41 @@
+# environment.lock.txt — v3 (C4.4G)
+#
+# Exact / best-evidenced pins for every third-party package imported by the
+# 43 shipped Python files (scripts/ 38 + figure_scripts/ 5), plus the
+# transitive h5ad backend.
+#
+# Version-evidence tiers (one is recorded per line):
+#   FROZEN_EXACT          version pinned in the frozen C4.4E/C4.4F release records
+#   ARTIFACT_DERIVED      version recovered from metadata embedded in original-run
+#                         artifacts (e.g. PNG "Matplotlib versionX.Y.Z" tags)
+#   CLEANROOM_OBSERVED    version recorded in the project clean-room environment log
+#                         (output/C4_final/cleanroom/run01/logs/environment.txt,
+#                         2026-08-26). Observed in the project reproduction
+#                         environment, NOT claimed as the original-run snapshot.
+#   UNKNOWN_ORIGINAL_VERSION
+#                         no original evidence exists. Deliberately NOT guessed;
+#                         installs must resolve the version from the index.
+#
+# Nothing in this file is a guess. Where no evidence exists the value is
+# UNKNOWN_ORIGINAL_VERSION.
+
+python==3.11.8                        # FROZEN_EXACT  (analysis_environment_verified.txt; cleanroom environment.txt)
+pydeseq2==0.5.4                       # FROZEN_EXACT  (C4.4F requirements; paper-workflow audit)
+matplotlib==3.11.1                    # ARTIFACT_DERIVED + CLEANROOM_OBSERVED (82 metadata hits under output/B5/**)
+numpy==2.4.6                          # CLEANROOM_OBSERVED
+pandas==2.3.3                         # CLEANROOM_OBSERVED
+scipy==1.17.1                         # CLEANROOM_OBSERVED
+statsmodels==0.14.6                   # CLEANROOM_OBSERVED
+anndata==0.12.19                      # CLEANROOM_OBSERVED
+mygene==UNKNOWN_ORIGINAL_VERSION      # no evidence; REQUIRED by scripts/04_b1_annotate.py (line 3: "import os, time, pandas as pd, numpy as np, mygene")
+gseapy==UNKNOWN_ORIGINAL_VERSION      # no evidence; REQUIRED by scripts/b5_m5_enrichment.py, scripts/b7_02b_decomposition.py, scripts/b7_scoring.py
+seaborn==UNKNOWN_ORIGINAL_VERSION     # no evidence; REQUIRED by scripts/b5_m34_mechanism_rescue.py (line 14 import, line 219 sns.heatmap). The clean-room log records seaborn=NOT_INSTALLED, so its PASS run must have used an environment where seaborn was installed; the version is not recoverable.
+# ---------------------------------------------------------------------------
+# Transitive / optional:
+h5py>=3.8                             # TRANSITIVE_ONLY - pulled in by anndata (h5ad backend); no shipped script imports it directly
+scikit-learn                          # NOT_REQUIRED - recorded as NOT_INSTALLED in the clean-room log; no shipped script imports it
+python-docx==1.2.0                    # NOT_REQUIRED_BY_CHAIN - documentation tooling present in the clean-room environment only
+#
+# Install commands
+#   pip install -r requirements.txt          # floors, includes mygene (C4.4G)
+#   pip install pydeseq2==0.5.4 matplotlib==3.11.1   # the two artifact-verified pins

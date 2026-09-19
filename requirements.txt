@@ -1,0 +1,16 @@
+# GM-CSF/IFN code release v3 (C4.4G) - third-party dependencies
+# Install:  pip install -r requirements.txt
+# Exact / best-evidenced pins per package: see environment.lock.txt
+# Packages whose original version has no evidence are listed as
+# UNKNOWN_ORIGINAL_VERSION in environment.lock.txt and are NOT guessed here;
+# the floors below are the validated minimum of the shipped scripts.
+pydeseq2==0.5.4
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+matplotlib>=3.8
+statsmodels>=0.14
+gseapy>=1.1
+anndata>=0.10
+seaborn>=0.13
+mygene>=1.2.0

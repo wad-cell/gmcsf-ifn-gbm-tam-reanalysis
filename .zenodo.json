@@ -1,0 +1,41 @@
+{
+  "title": "GM-CSF/IFN tumour-myeloid transcriptome reanalysis: analysis code and reproducibility package",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "language": "eng",
+  "access_right": "open",
+  "license": "mit",
+  "description": "Analysis code and reproducibility materials for a quantitative reanalysis of glioblastoma-monocyte transcriptomes examining a partially reversible GM-CSF-associated interferon program and patient-level correlates in operationally mapped monocyte-derived tumour-associated macrophages.",
+  "creators": [
+    {
+      "name": "Deng, Jing",
+      "orcid": "0009-0003-1668-8188",
+      "affiliation": "Department of Neurosurgery, Neurosurgery Research Institute, The First Affiliated Hospital, Fujian Medical University"
+    },
+    {
+      "name": "Wang, Ying",
+      "orcid": "0009-0006-4724-950X",
+      "affiliation": "Department of Neurosurgery, Neurosurgery Research Institute, The First Affiliated Hospital, Fujian Medical University"
+    },
+    {
+      "name": "Zeng, Jiateng",
+      "affiliation": "Department of Neurosurgery, Neurosurgery Research Institute, The First Affiliated Hospital, Fujian Medical University"
+    },
+    {
+      "name": "Yu, Lianghong",
+      "affiliation": "Department of Neurosurgery, Neurosurgery Research Institute, The First Affiliated Hospital, Fujian Medical University"
+    },
+    {
+      "name": "Ge, Hongliang",
+      "affiliation": "Department of Neurosurgery, Neurosurgery Research Institute, The First Affiliated Hospital, Fujian Medical University"
+    }
+  ],
+  "keywords": [
+    "glioblastoma",
+    "GM-CSF",
+    "type I interferon",
+    "tumour-associated macrophages",
+    "transcriptomics",
+    "reproducibility"
+  ]
+}

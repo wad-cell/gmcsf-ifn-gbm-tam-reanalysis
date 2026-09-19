@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the software release and the associated article."
+title: "GM-CSF/IFN tumour-myeloid transcriptome reanalysis: analysis code and reproducibility package"
+type: software
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Deng
+    given-names: Jing
+    orcid: "https://orcid.org/0009-0003-1668-8188"
+    affiliation: "Department of Neurosurgery, Neurosurgery Research Institute, The First Affiliated Hospital, Fujian Medical University"
+  - family-names: Wang
+    given-names: Ying
+    orcid: "https://orcid.org/0009-0006-4724-950X"
+    affiliation: "Department of Neurosurgery, Neurosurgery Research Institute, The First Affiliated Hospital, Fujian Medical University"
+  - family-names: Zeng
+    given-names: Jiateng
+    affiliation: "Department of Neurosurgery, Neurosurgery Research Institute, The First Affiliated Hospital, Fujian Medical University"
+  - family-names: Yu
+    given-names: Lianghong
+    affiliation: "Department of Neurosurgery, Neurosurgery Research Institute, The First Affiliated Hospital, Fujian Medical University"
+  - family-names: Ge
+    given-names: Hongliang
+    affiliation: "Department of Neurosurgery, Neurosurgery Research Institute, The First Affiliated Hospital, Fujian Medical University"
+abstract: >-
+  Analysis code and reproducibility materials for a quantitative reanalysis of
+  glioblastoma-monocyte transcriptomes examining a partially reversible
+  GM-CSF-associated interferon program and patient-level correlates in
+  operationally mapped monocyte-derived tumour-associated macrophages.
+keywords:
+  - glioblastoma
+  - GM-CSF
+  - type I interferon
+  - tumour-associated macrophages
+  - transcriptomics
+  - reproducibility
+
+repository-code: "https://github.com/wad-cell/gmcsf-ifn-gbm-tam-reanalysis"
