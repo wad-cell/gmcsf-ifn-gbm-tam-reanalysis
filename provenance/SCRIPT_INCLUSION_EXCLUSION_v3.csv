@@ -1,0 +1,52 @@
+﻿script_v3_path,decision,rationale,category
+scripts/02_b1_deseq2.py,INCLUDED,B1-GSE309039; DESeq2-statistics,analysis-or-figure
+scripts/03_b1_summary.py,INCLUDED,B1-GSE309039; analysis,analysis-or-figure
+scripts/04_b1_annotate.py,INCLUDED,B1-GSE309039; analysis,analysis-or-figure
+scripts/06_b1_report.py,INCLUDED,B1-GSE309039; report-md,analysis-or-figure
+scripts/08_b2_deseq2.py,INCLUDED,B2-GSE309037; DESeq2-statistics,analysis-or-figure
+scripts/09_b2_report.py,INCLUDED,B2-GSE309037; report-md,analysis-or-figure
+scripts/11_b2_report.py,INCLUDED,B2-GSE309037; report-md,analysis-or-figure
+scripts/12_b3_deseq2.py,INCLUDED,B3-GSE309038; DESeq2-statistics,analysis-or-figure
+scripts/13_b3_report.py,INCLUDED,B3-GSE309038; report-md,analysis-or-figure
+scripts/14_b4ab.py,INCLUDED,B4-core; analysis,analysis-or-figure
+scripts/15_b4_report.py,INCLUDED,B4-core; report-md,analysis-or-figure
+scripts/B4d_analysis.py,INCLUDED,B4-core; analysis,analysis-or-figure
+scripts/a3_rebuild_fulltranscriptome.py,INCLUDED,A3-GSE182109-h5ad; analysis,analysis-or-figure
+scripts/b5_m1_datacrosswalk.py,INCLUDED,B5; analysis,analysis-or-figure
+scripts/b5_m2_core68_matrix.py,INCLUDED,B5; analysis,analysis-or-figure
+scripts/b5_m34_mechanism_rescue.py,INCLUDED,B5; analysis,analysis-or-figure
+scripts/b5_m5_enrichment.py,INCLUDED,B5; analysis,analysis-or-figure
+scripts/b5_m6a_loo_donor.py,INCLUDED,B5; analysis,analysis-or-figure
+scripts/b5_m6b_permutation.py,INCLUDED,B5; analysis,analysis-or-figure
+scripts/b5_m7_scRNA_patient.py,INCLUDED,B5; analysis,analysis-or-figure
+scripts/b6_fetch_gene_lengths.py,INCLUDED,B6; analysis,analysis-or-figure
+scripts/b6_m4_reproduce_scRNA.py,INCLUDED,B6; analysis,analysis-or-figure
+scripts/b6_m5_annotation_audit.py,INCLUDED,B6; analysis,analysis-or-figure
+scripts/b6_m6_decompose.py,INCLUDED,B6; analysis,analysis-or-figure
+scripts/b6_m8_analysis_v2.py,INCLUDED,B6; analysis,analysis-or-figure
+scripts/b6_m8_load_ndgbm.py,INCLUDED,B6; analysis,analysis-or-figure
+scripts/b6_permutation_audit.py,INCLUDED,B6; analysis,analysis-or-figure
+scripts/b6_prep_permutation_data.py,INCLUDED,B6; analysis,analysis-or-figure
+scripts/b7_01_prep_data.py,INCLUDED,B7; sc-patient-level,analysis-or-figure
+scripts/b7_02_member_table.py,INCLUDED,B7; sc-patient-level,analysis-or-figure
+scripts/b7_02b_decomposition.py,INCLUDED,B7; sc-patient-level,analysis-or-figure
+scripts/b7_03b_classical_ifn.py,INCLUDED,B7; sc-patient-level,analysis-or-figure
+scripts/b7_04_gmcsf_ifn_corr.py,INCLUDED,B7; sc-patient-level,analysis-or-figure
+scripts/b7_05_state_explore.py,INCLUDED,B7; sc-patient-level,analysis-or-figure
+scripts/b7_06_rescue.py,INCLUDED,B7; sc-patient-level,analysis-or-figure
+scripts/b7_scoring.py,INCLUDED,B7; analysis,analysis-or-figure
+scripts/prep_patient_paired.py,INCLUDED,C2-patient-paired; sc-patient-level,analysis-or-figure
+figure_scripts/b5_figures.py,INCLUDED,figures; figure-render,figure-render
+figure_scripts/b7_08_figures.py,INCLUDED,B7; figure-render,figure-render
+figure_scripts/make_figure5_v3_1.py,INCLUDED,figures; figure-render,figure-render
+figure_scripts/make_main_figures.py,INCLUDED,figures; figure-render,figure-render
+figure_scripts/make_supp_figures.py,INCLUDED,figures; figure-render,figure-render
+scripts/10_b2_overlap.py,EXCLUDED_SUPERSEDED,"superseded by 11_b2_report.py (NaN-pollution fix; identical output filenames) ; original file retained read-only in the project directory, not deleted ; cleaned copy kept at excluded_scripts/10_b2_overlap.py (not shipped in zip)",analysis
+scripts/b5_m6a_loo_donor_20260817_090117_188.py,EXCLUDED_SUPERSEDED,"earlier partial-run version superseded by b5_m6a_loo_donor.py ; original file retained read-only in the project directory, not deleted",analysis
+scripts/b6_m8_analysis.py,EXCLUDED_SUPERSEDED,"first-version B6 module 8 superseded by b6_m8_analysis_v2.py ; original file retained read-only in the project directory, not deleted",analysis
+scripts/b6_prep_permutation_data.py(earlier unversioned),EXCLUDED_SUPERSEDED,"earlier bg-gene prep superseded by b6_prep_permutation_data.py (reads output/B2/dds.pkl) ; original file retained read-only in the project directory, not deleted",analysis
+scripts/make_figure5_v3.py,EXCLUDED_SUPERSEDED,"superseded by make_figure5_v3_1.py in figure_scripts ; original file retained read-only in the project directory, not deleted",figure-render
+scripts/build_source_data_v3_1.py,EXCLUDED_SUPERSEDED,"superseded by make_main_figures.py figure_source_data writer ; original file retained read-only in the project directory, not deleted",figure-render
+"R-equivalent scripts (01_load_and_qc.R, B5/reproducible_analysis.R, C3.1 reproduce_rds.R)",EXCLUDED_REFERENCE_ONLY,"R not applicable in run environment; kept only as reference (paper workflow artifacts, not analysis runners)",reference
+scripts/generate_gse182109_aligned_object.py,INCLUDED,NEW in C4.4G: formal generator for the B7 barcode-aligned object temp/B7/gse182109_myeloid_expr_aligned.pkl; previously produced by an unshipped ad-hoc script (recipe only). Frozen rules R1-R5 + hard failure conditions; consumer b7_03b/b7_06/prep_patient_paired,data-prep
+tools/fetch_geo_supplementary.py,INCLUDED,NEW in C4.4G: stage-0 input tool (not part of the analysis chain) - prints/downloads/verifies the four GSE309037/38/39 raw-count files with sha256 and parse check,tooling
