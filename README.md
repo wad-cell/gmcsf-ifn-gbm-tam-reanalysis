@@ -1,5 +1,5 @@
 # GM-CSF/IFN Project - Code and Reproducibility Package v1.0.0
-
+Archived release v1.0.0: [https://doi.org/10.5281/zenodo.22866023](https://doi.org/10.5281/zenodo.22866023)
 Analysis code and reproducibility package for the GM-CSF/IFN tumour-myeloid study.
 Scope is strictly limited to the five whitelisted public datasets
 **GSE309037, GSE309038, GSE309039, GSE163120, GSE182109**.
