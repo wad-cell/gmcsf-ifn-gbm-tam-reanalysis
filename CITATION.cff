@@ -3,6 +3,7 @@ message: "If you use this software, please cite the software release and the ass
 title: "GM-CSF/IFN tumour-myeloid transcriptome reanalysis: analysis code and reproducibility package"
 type: software
 version: 1.0.0
+doi: "10.5281/zenodo.22866023"
 license: MIT
 authors:
   - family-names: Deng
